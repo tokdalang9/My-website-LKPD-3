@@ -1,0 +1,292 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header .container, .service .container, footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+header h1 a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+header h1 a:hover {
+    color: #fff; 
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header ul li a:hover, .active {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px; 
+}
+
+/* Banner */
+.banner {
+    height: 70vh;
+    background-image: url('../banner-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(68, 76, 143, 0.6);
+    z-index: 0;
+}
+
+.banner h2 {
+    font-size: 50px;
+    margin: 0;
+    padding: 15px;
+    border: 2px solid white;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills, .education, .contact, .contact-container {
+    background-color: #fff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    padding: 50px;
+    margin: 100px auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+}
+
+.skills h3, .education h3, .contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.skills table, .education table, .contact table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.skills th, .education th, .contact th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+.skills td, .education td, .contact td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Social Media Section */
+.service {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.service h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h4 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+footer small {
+    color: #ccc;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Contact Form */
+.contact-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;;
+}
+
+/* Add hover effects for links */
+.skills td:hover, .education td:hover, .contact td:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .sosmed .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner h2 {
+        font-size: 36px;
+    }
+
+    .skills td, .education td, .contact td {
+        font-size: 16px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
